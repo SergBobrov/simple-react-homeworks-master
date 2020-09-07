@@ -16,6 +16,7 @@ function HW3() {
     const addUserCallback = (name: string) => {
         let user = {id: v1(), name: name}
         setUsers([user, ...users]);
+        console.log("ss");
     }
 
     return (
