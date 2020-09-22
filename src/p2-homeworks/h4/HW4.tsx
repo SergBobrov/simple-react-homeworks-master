@@ -30,15 +30,15 @@ function HW4() {
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*should work (должно работать)*/}
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
+                    red
+                    // red = {true}
                 >
-                    delete {/*// название кнопки попадёт в children*/}
+                    test  {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
 
