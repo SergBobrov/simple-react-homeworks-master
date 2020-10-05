@@ -1,17 +1,21 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import {PATH} from "./Routes";
 
 function Header() {
     return (
         <div>
+
             <nav className={""}>
                 <div className={""}>
-                    <NavLink to="/pre-junior" activeClassName={""}>Junior</NavLink>
+                    <NavLink to={PATH.PRE_JUNIOR} activeClassName={""}>PreJunior</NavLink>
                 </div>
                 <div className={""}>
-                    <NavLink to="/JuniorPlus" activeClassName={""}>JuniorPlus</NavLink>
+                    <NavLink to={PATH.JUNIOR} activeClassName={""}>Junior</NavLink>
                 </div>
-
+                <div className={""}>
+                    <NavLink to={PATH.JUNIOR_PLUS} activeClassName={""}>JuniorPlus</NavLink>
+                </div>
             </nav>
 
         </div>
