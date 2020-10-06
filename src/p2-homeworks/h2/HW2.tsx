@@ -24,11 +24,11 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: string): Array
 
     switch (filter) {
         case "low":
-            return affairs.filter(t => t.priority !== "low")
+            return affairs.filter(t => t.priority === "low")
         case "middle":
-            return affairs.filter(t => t.priority !== "middle")
+            return affairs.filter(t => t.priority === "middle")
         case "high":
-            return affairs.filter(t => t.priority !== "high")
+            return affairs.filter(t => t.priority === "high")
         default:
             return affairs;
     }
@@ -39,6 +39,7 @@ export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<Aff
 
 function HW2() {
     const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs);
+
     const [filter, setFilter] = useState<FilterType>("all");
 
     const filteredAffairs = filterAffairs(affairs, filter);

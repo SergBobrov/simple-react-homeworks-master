@@ -5,6 +5,7 @@ import {AffairType, FilterType} from "./HW2";
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: Dispatch<SetStateAction<FilterType>>
+    // serFilet: (s: FilterType) => any
     deleteAffairCallback: (id: number) => void
 }
 

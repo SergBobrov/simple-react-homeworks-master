@@ -15,7 +15,7 @@ function Affair(props: AffairPropsType) {
 
     return (
         <div>
-            <span>{props.affair.name}</span>
+            <span>{props.affair.name}-{props.affair.priority}</span>
 
             <button onClick={deleteCallback}>X</button>
         </div>
