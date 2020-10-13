@@ -13,7 +13,8 @@ type HomeWorkActionsType =
 export const homeWorkReducer = (state: PeopleStateType, action: HomeWorkActionsType): PeopleStateType => {
     switch (action.type) {
         case SORT_PEOPLE: {
-            let newState = [...state.sort((a, b) => {
+            let newState = [...state]
+            newState.sort((a, b) => {
                 if (a.name < b.name) {
                     return -1
                 }
@@ -21,7 +22,7 @@ export const homeWorkReducer = (state: PeopleStateType, action: HomeWorkActionsT
                     return 1
                 } else return 0
             })
-            ];
+            ;
             if (action.payload === "up") {
                 return newState
             } else return newState.reverse()
