@@ -1,3 +1,11 @@
 .range {
 
+    width: 25%;
+    height: 10px;
+    color: lime;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #24a016;
+
+    -webkit-appearance: none;
 }
