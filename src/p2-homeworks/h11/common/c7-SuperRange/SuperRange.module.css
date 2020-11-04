@@ -1,11 +1,7 @@
 .range {
-
-    width: 25%;
-    height: 10px;
-    color: lime;
+    display: flex;
+    width: 400px;
+    height: 2px;
     border-radius: 5px;
-    outline: 0;
-    background-color: #24a016;
-
-    -webkit-appearance: none;
 }
+

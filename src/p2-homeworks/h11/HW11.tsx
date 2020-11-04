@@ -10,9 +10,13 @@ function HW11() {
         setValue1(value)
     }
 
-   const setChangeRange2 = ([value1, value2]:number[]) => {
-        setValue1(value1)
-        setValue2(value2)
+    const setChangeRange2 = (value: number | number[]) => {
+        if (typeof value === 'number') {
+            return
+        } else setValue1(value[0])
+        setValue2(value[1])
+
+
     }
 
     return (
@@ -26,7 +30,8 @@ function HW11() {
                 <SuperRange
                     // сделать так чтоб value1 изменялось
                     value={value1}
-                    onChangeRange = {setChangeRange1}
+                    onChangeRange={setChangeRange1}
+                    step={10}
                 />
             </div>
             <hr/>
